@@ -1,0 +1,20 @@
+{
+  "name": "donation-functional-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "build": "tailwindcss -i ./css/main.css -o ./css/output.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "daisyui": "^4.12.10",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.12",
+    "vite": "^5.4.7"
+  }
+}
