@@ -15,22 +15,22 @@
 <body class="font-lexend">
     <!-- header section starts -->
     <header class="w-full sticky top-0 z-10">
-        <nav class="bg-[#F9F7F3]">
-           <div class="w-5/6 mx-auto flex backdrop-blur-lg justify-between pt-5 pb-7">
-                <button id="btn-blog" class="bg-[#B4F461] font-bold rounded-md px-5 py-2">Blog</button>
-                <div class="flex gap-2 justify-center items-center">
+        <nav class="bg-[#F9F7F3] filter backdrop-blur-md">
+           <div class="w-5/6 mx-auto flex justify-between pt-5 pb-7">
+                <button id="btn-blog" class="bg-[#B4F461] font-bold rounded-md px-3 md:px-5 py-1 md:py-2">Blog</button>
+                <div class="flex flex-col md:flex-row gap-2 justify-center items-center">
                     <img class="w-7 h-7" src="assets/logo.png" alt="Logo">
-                    <h1 class="text-xl font-bold">Donate Bangladesh</h1>
+                    <div class="text-lg md:text-xl flex gap-1 justify-center items-center flex-col md:flex-row font-bold"><p>Donate</p><p>Bangladesh</p></div>
                 </div>
                 <div class="flex gap-2 justify-center items-center">
                     <img class="w-5 h-5" src="assets/coin.png" alt="coin">
-                    <h2 class="font-bold"><span id="main-balance">5500</span> <span>BDT</span></h2>
+                    <h2 class="font-bold"><span id="main-balance">46500</span> <span>BDT</span></h2>
                 </div>
            </div>
         </nav>
         <!-- donation button with history -->
 
-        <section class="bg-transparent backdrop-blur-md py-6 w-full flex justify-center items-center gap-3">
+        <section class="bg-transparent py-6 filter backdrop-blur-md w-full flex justify-center items-center gap-3">
             <button id="show-btn-donation" onclick="activeFunction(this)" class="btn btn-outline hover:text-black hover:bg-[#B4F461]">Donation</button>
             <button id="show-btn-history" onclick="activeFunction(this)" class="btn btn-outline hover:text-black hover:bg-[#B4F461]">History</button>
         </section>
@@ -41,7 +41,7 @@
     <!-- main section starts -->
     <main id="donation-main-container" class="w-5/6 mx-auto mb-[4rem]">
         <section class="border-2 border-gray-200 p-5 rounded-md shadow-md">
-            <div class="grid grid-cols-2 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <img class="w-full h-full" src="assets/noakhali.png" alt="">
                 <div class="flex flex-col gap-4 box-border">
                     <div>
@@ -61,7 +61,7 @@
         </section>
 
         <section class="mt-5 border-2 border-gray-200 p-5 rounded-md shadow-md">
-            <div class="grid grid-cols-2 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <img class="w-full h-full" src="assets/feni.png" alt="">
                 <div class="flex flex-col gap-4 box-border">
                     <div>
@@ -81,7 +81,7 @@
         </section>
 
         <section class="mt-5 border-2 border-gray-200 p-5 rounded-md shadow-md">
-            <div class="grid grid-cols-2 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <img class="w-full h-full" src="assets/quota-protest.png" alt="">
                 <div class="flex flex-col gap-4 box-border">
                     <div>
@@ -95,7 +95,7 @@
                         <input id="input-donation-quota" class="p-2 mb-2 border-2 border-gray-200 rounded-md" type="text" placeholder="write donation amount">
                         <button id="btn-quota-donation" class="flex flex-col py-2 justify-center items-center px-3 rounded-md bg-[#B4F461] font-semibold">Donate now</button>
                         <dialog id="my_modal_4" class="modal">
-                            <div class="modal-box flex flex-col items-center w-2/6 h-3/6 max-w-5xl">
+                            <div class="modal-box flex flex-col items-center max-w-3/6 max-h-3/6">
                               <h3 class="text-4xl font-bold">Congrats!</h3>
                               <img class="mt-3" src="assets/coin.png" alt="">
                               <p class="py-2">You have donated for Humankind</p>

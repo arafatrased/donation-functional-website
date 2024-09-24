@@ -5,7 +5,6 @@ function gettingInputCalcByFunction(btn,inp,btn2){
     .addEventListener('click', function(){
     const donInpValue = getInputValueById(inp);
     const currentTimeDate = new Date();
-    console.log(currentTimeDate);
 
     const donBtnTextValue = getInputTextById(btn2);
     if(isNaN(donInpValue) || donInpValue < 0){
@@ -14,7 +13,10 @@ function gettingInputCalcByFunction(btn,inp,btn2){
         return;
     }
     const mainBalance = getInputTextById('main-balance');
-
+    if(donInpValue > mainBalance){
+        alert('Donation Exceeded the Limit');
+        return;
+    }
     const newDonBtnTextValue = donBtnTextValue + donInpValue;
     const newMainBalance = mainBalance - donInpValue;
 
